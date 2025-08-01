@@ -1,0 +1,684 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Minimalista</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  
+</head>
+<!-- Botón flotante de contacto -->
+<div class="chat-flotante">
+  <button id="btnChat" class="btn-chat">💬</button>
+  <div class="ventana-chat" id="ventanaChat">
+    <p>¿Tienes dudas? Escríbeme:</p>
+    <a href="https://wa.me/34600000000" target="_blank">📱 WhatsApp</a>
+    <a href="mailto:correo@ejemplo.com">✉️ Correo</a>
+  </div>
+</div>
+
+<body>
+
+ <!-- Fondo animado -->
+  <div class="fondo-animado">
+    <span style="--i:11"></span>
+    <span style="--i:19"></span>
+    <span style="--i:25"></span>
+    <span style="--i:17"></span>
+    <span style="--i:22"></span>
+    <span style="--i:13"></span>
+    <span style="--i:28"></span>
+    <span style="--i:18"></span>
+    <span style="--i:24"></span>
+    <span style="--i:20"></span>
+  </div>
+
+  <!-- Modal -->
+  <section class="seccion"> 
+    <button class="abrir-modal">Abrir ventana</button>
+    <div class="modal" id="miModal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <h3>Hola 👋</h3>
+        <p>Este es un ejemplo de ventana emergente (modal). Puedes poner texto, imágenes o formularios aquí.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">👨‍💻 MiPortafolio</div>
+    
+    <div class="hamburguesa" id="hamburguesa">☰</div>
+    <button id="modo-btn" class="modo-toggle">🌙</button>
+    <div class="hamburguesa" id="hamburguesa">☰</div>
+<nav class="nav" id="nav">
+  
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#preguntas frecuentes"> 
+    <a href="#faq">Preguntas Frecuentes</a>
+    <a href="#aficiones"></a>
+  <a href="#faq">aficiones
+  <a href="#faq">ultimos articulos</a>
+  
+  
+  
+</nav>
+<
+
+  </header>
+
+  <!-- Hero -->
+  <section class="hero parallax" class="seccion animar-scroll"></section>
+    <section id="inicio" class="seccion hero">
+  <img src="img/foto-perfil.png" alt="Mi foto" class="perfil" />
+  <h1>¡Hola! Soy Alberto</h1>
+  <section id="inicio" class="seccion">
+  <h1><span id="texto-escribiendo"></span><span class="cursor">|</span></h1>
+  <p>Soy un diseñador web creativo con experiencia en HTML, CSS y un toque de JavaScript. Me gusta crear sitios atractivos y funcionales.</p>
+  <svg id="estrella" width="100" height="100" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2L14.09 8.26H21L15.45 12.97L17.54 19.24L12 14.53L6.46 19.24L8.55 12.97L3 8.26H9.91L12 2Z"/>
+</svg>
+<section id="sobre-mi" class="seccion reveal">
+  <div class="contenedor">
+    <h2>Sobre mí</h2>
+    <div class="sobre-mi-contenido">
+      
+      <div class="texto-sobre-mi">
+        <p>Soy un diseñador web creativo con experiencia en <strong>HTML</strong>, <strong>CSS</strong> y un toque de <strong>JavaScript</strong>. Me apasiona crear sitios web modernos, funcionales y con buen diseño visual.</p>
+        <p>Me gusta resolver problemas, aprender tecnologías nuevas y ofrecer soluciones personalizadas para cada proyecto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</section> 
+  </section>
+  <section id="cv" class="seccion cv">
+  <h2>Mi Currículum</h2>
+  <p>Puedes descargar mi CV completo en PDF.</p>
+  <a href="docs/CV-AlbertoPuchol.pdf" download class="btn-descargar">
+    <i class="fas fa-file-download"></i> Descargar CV
+  </a>
+  
+  
+</section>
+
+  <!-- Aficiones -->
+  <section id="aficiones" class="seccion">
+    <h2>Mis Aficiones</h2>
+    <div class="aficiones-lista">
+      <div class="aficion">
+        📖 <h3>Leer</h3>
+        <p>Me encanta leer sobre desarrollo personal, tecnología y ciencia ficción.</p>
+      </div>
+      <div class="aficion">
+        🚶‍♂️ <h3>Pasear</h3>
+        <p>Disfruto caminar al aire libre para despejar la mente y encontrar inspiración.</p>
+      </div>
+      <div class="aficion">
+        🐎 <h3>Montar a caballo</h3>
+        <p>Montar a caballo me conecta con la naturaleza y me da una gran sensación de libertad.</p>
+      </div>
+    </div>
+  </section>
+ <section class="seccion" id="proyectos">
+  <h2>Mis Proyectos</h2>
+
+  <!-- Filtro por categorías -->
+  <div class="filtro-proyectos">
+    <button data-filtro="todos" class="activo">Todos</button>
+    <button data-filtro="diseno">Diseño</button>
+    <button data-filtro="desarrollo">Desarrollo</button>
+    <button data-filtro="react">React</button>
+  </div>
+  <div class="imagenes-proyectos-centradas">
+    <div class="contenedor-img etiqueta diseno">
+      <span class="etiqueta-texto">HTML/CSS</span>
+      <img class="img-hover" src="img/proyecto1.jpg" alt="Landing Page">
+    </div>
+    <div class="contenedor-img etiqueta desarrollo">
+      <span class="etiqueta-texto">JavaScript</span>
+      <img class="img-hover" src="img/proyecto2.jpg" alt="Blog Personal">
+    </div>
+    <
+    
+  </div>
+<section id="estadisticas" class="seccion">
+  <h2>Estadísticas</h2>
+  <div class="contenedor-estadisticas">
+    <div class="contador" data-numero="1200">50</div>
+    <p>Proyectos realizados</p>
+  </div>
+  <div class="contenedor-estadisticas">
+    <div class="contador" data-numero="350">35</div>
+    <p>Clientes satisfechos</p>
+  </div>
+  <div class="contenedor-estadisticas">
+    <div class="contador" data-numero="15">75</div>
+    <p>Años de experiencia</p>
+  </div>
+</section>
+
+ <!-- Sección de habilidades -->
+<section id="habilidades" class="seccion reveal">
+  <h2>Mis habilidades</h2>
+  <div class="habilidad">
+    <p>HTML</p>
+    <div class="barra"><div class="progreso" style="width: 90%"></div></div>
+  </div>
+  <div class="habilidad">
+    <p>CSS</p>
+    <div class="barra"><div class="progreso" style="width: 80%"></div></div>
+  </div>
+  <div class="habilidad">
+    <p>JavaScript</p>
+    <div class="barra"><div class="progreso" style="width: 65%"></div></div>
+  </div>
+</section>
+
+  <div class="contenedor-habilidades">
+    
+    <!-- CSS -->
+    
+    
+        <div class="barra-progreso" data-progreso="100%"></div>
+      <div class="tarjetas proyectos">
+    <div class="tarjeta animar diseno">
+      <h3>Landing Page</h3>
+      <p>Diseño adaptable para un producto.</p>
+      <a class="btn-vermas" href="#">Ver más</a>
+    </div>
+    <div class="tarjeta animar desarrollo">
+      <h3>Blog Personal</h3>
+      <p>Blog con categorías y modo oscuro.</p>
+      <a class="btn-vermas" href="#">Ver más</a>
+    </div>
+    <div class="tarjeta animar react">
+      <h3>Portfolio JS</h3>
+      <p>Interacción dinámica con JavaScript.</p>
+      <a class="btn-vermas" href="#">Ver más</a>
+    </div>
+  </div>
+    </div>
+
+    <!-- Diseño -->
+   
+      
+    
+  <!-- Galería -->
+  <section class="galeria">
+    <h2>Galería de imágenes</h2>
+    <div class="carrusel">
+      <div class="imagenes">
+        <img src="img/galeria1.jpg" alt="Paisaje 1">
+        <img src="img/galeria2.jpg" alt="Caballo">
+        <img src="img/galeria3.jpg" alt="Lectura">
+      </div>
+    </div>
+  </section>
+  <section id="faq" class="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-item">
+      <button class="faq-pregunta">¿Qué servicios ofreces? <span class="icono">+</span></button>
+      <div class="faq-respuesta">
+        <p>Ofrezco diseño y desarrollo web frontend profesional, optimizado para SEO y adaptable a todos los dispositivos.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-pregunta">¿Puedo ver ejemplos de tu trabajo? <span class="icono">+</span></button>
+      <div class="faq-respuesta">
+        <p>Sí, visita la sección de proyectos para ver ejemplos reales con imágenes y descripciones.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-pregunta">¿Trabajas de forma remota? <span class="icono">+</span></button>
+      <div class="faq-respuesta">
+        <p>Sí, trabajo con clientes de cualquier parte del mundo utilizando herramientas de colaboración online.</p>
+      </div>
+    </div>
+<section id="blog" class="blog">
+  <h2>Últimos Artículos</h2>
+
+  <div class="blog-grid">
+    <article class="blog-card">
+      <img src="img/blog1.webp" alt="Artículo 1">
+      <div class="blog-contenido">
+        <h3>Cómo diseñar una web moderna</h3>
+        <p>Descubre los principios básicos para crear una página atractiva y funcional en 2025.</p>
+        <a href="#">Leer más</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="img/blog2.webp" alt="Artículo 2">
+      <div class="blog-contenido">
+        <h3>Errores comunes al crear un portafolio</h3>
+        <p>Evita estos fallos si quieres destacar tu trabajo profesional en internet.</p>
+        <a href="#">Leer más</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="img/blog3.webp" alt="Artículo 3">
+      <div class="blog-contenido">
+        <h3>Consejos para mejorar tu posicionamiento SEO</h3>
+        <p>Haz que tu web aparezca en Google con estas buenas prácticas de optimización.</p>
+        <a href="#">Leer más</a>
+      </div>
+    </article>
+  </div>
+</section>
+  <!-- Contacto -->
+  <section id="contacto" class="seccion contacto">
+   <h2>Contacto</h2>
+  <form class="formulario-contacto">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea placeholder="Tu mensaje..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+<section id="faq" class="faq">
+  <h2>Preguntas Frecuentes</h2>
+
+  <div class="faq-item">
+  <button class="faq-pregunta">¿Qué servicios ofreces?</button>
+    <div class="faq-answer">
+      <p>Diseño web, desarrollo front-end y mantenimiento de sitios personales y empresariales.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pregunta">¿Qué servicios ofreces?</button>
+    <div class="faq-answer">
+      <p>Trabajo en línea desde España, y colaboro con clientes en todo el mundo.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pregunta">¿Qué servicios ofreces?</button>
+    <div class="faq-answer">
+      <p>Tengo más de 5 años creando sitios responsivos, modernos y accesibles.</p>
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- Mapa -->
+  <section class="mapa">
+    <h2>Ubicación</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.3585784269493!2d2.1734035156471074!3d41.38506397926367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2fcd70b26cf%3A0x8c3b6d0f0e2b0e83!2sBarcelona!5e0!3m2!1ses!2ses!4v1692643982587!5m2!1ses!2ses" 
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Blog -->
+  <section class="blog" id="blog">
+    <h2>Mi Blog</h2>
+    <div class="grid-blog">
+      <article class="post">
+        <img src="https://source.unsplash.com/400x250/?design" alt="Diseño web">
+        <h3>Diseño Web Moderno</h3>
+        <p>Consejos y tendencias para crear sitios visualmente atractivos y funcionales.</p>
+        <a href="#">Leer más</a>
+      </article>
+      <article class="post">
+        <img src="https://source.unsplash.com/400x250/?coding" alt="Programación">
+        <h3>Aprende a Programar</h3>
+        <p>Guías paso a paso para comenzar en el mundo del desarrollo web.</p>
+        <a href="#">Leer más</a>
+      </article>
+      <article class="post">
+        <img src="https://source.unsplash.com/400x250/?freelance" alt="Freelance">
+        <h3>Vida Freelance</h3>
+        <p>Descubre cómo trabajar por tu cuenta y vivir de tu pasión por la tecnología.</p>
+        <a href="#">Leer más</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Botones Sociales -->
+  <div class="botones-sociales">
+    <a href="https://facebook.com" target="_blank" class="social facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank" class="social instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/123456789" target="_blank" class="social whatsapp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+  <div class="selector-idioma">
+  <button onclick="cambiarIdioma('es')">Español</button>
+  <button onclick="cambiarIdioma('en')">English</button>
+</div>
+
+<section class="multilingue">
+  
+</section>
+<section id="faq" class="seccion faq">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq-contenedor">
+    <div class="faq-item">
+      <div class="faq-pregunta">¿Qué tipo de proyectos realizas?</div>
+      <div class="faq-respuesta">Me enfoco en sitios web modernos, responsivos y optimizados tanto para empresas como para portafolios personales.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-pregunta">¿Trabajas con frameworks?</div>
+      <div class="faq-respuesta">Sí, tengo experiencia en React, Vue, y también en HTML/CSS/JS puro.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-pregunta">¿Ofreces mantenimiento web?</div>
+      <div class="faq-respuesta">Claro, doy soporte técnico, actualizaciones y mejoras constantes si el cliente lo requiere.</div>
+    </div>
+  </div>
+</section>
+<section id="experiencia" class="seccion">
+  
+  <h2>Experiencia</h2>
+
+  <div class="tabs">
+    <button class="tab activo" data-tab="trabajo">Trabajo</button>
+    <button class="tab" data-tab="formacion">Formación</button>
+    <button class="tab" data-tab="habilidades">Habilidades</button>
+  </div>
+
+  <div class="tab-contenido activo" id="trabajo">
+    <p>He trabajado en varios proyectos como desarrollador frontend freelance...</p>
+  </div>
+  <div class="tab-contenido" id="formacion">
+    <p>Formado en diseño web, HTML, CSS, JavaScript y frameworks modernos.</p>
+  </div>
+  <div class="tab-contenido" id="habilidades">
+    <p>HTML, CSS, JS, React, UX/UI, Responsive Design...</p>
+  </div>
+</section>
+<button class="boton-neon">Contáctame</button>
+
+  
+
+  <!-- Scripts JS -->
+  <script>
+    // Hamburguesa
+    document.getElementById("hamburguesa").addEventListener("click", () => {
+      document.getElementById("nav").classList.toggle("activo");
+    });
+
+    // Modal
+    const abrir = document.querySelector('.abrir-modal');
+    const modal = document.getElementById('miModal');
+    const cerrar = document.querySelector('.cerrar');
+
+    abrir.addEventListener('click', () => {
+      modal.style.display = 'block';
+    });
+    cerrar.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target == modal) {
+        modal.style.display = 'none';
+      }
+    });
+    
+
+    // Scroll animado
+    const elementos = document.querySelectorAll('.animado');
+    const mostrarElemento = () => {
+      const alturaVentana = window.innerHeight;
+      elementos.forEach(el => {
+        const distancia = el.getBoundingClientRect().top;
+        if (distancia < alturaVentana - 100) {
+          el.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', mostrarElemento);
+    window.addEventListener('load', mostrarElemento);
+
+    // Barras de progreso
+    const animarBarras = () => {
+      const barras = document.querySelectorAll('.relleno');
+      barras.forEach(barra => {
+        const distancia = barra.getBoundingClientRect().top;
+        if (distancia < window.innerHeight - 100) {
+          barra.classList.add('activa');
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', animarBarras);
+    window.addEventListener('load', animarBarras);
+    
+  </script>
+<script>
+  
+
+  // Guardar modo anterior
+  if (localStorage.getItem('modo') === 'oscuro') {
+    body.classList.add('modo-oscuro');
+    botonModo.textContent = '☀️';
+  }
+
+  botonModo.addEventListener('click', () => {
+    body.classList.toggle('modo-oscuro');
+
+    // Guardar en localStorage
+    if (body.classList.contains('modo-oscuro')) {
+      botonModo.textContent = '☀️';
+      localStorage.setItem('modo', 'oscuro');
+    } else {
+      botonModo.textContent = '🌙';
+      localStorage.setItem('modo', 'claro');
+    }
+  });
+  
+</script>
+<script>
+  const hora = new Date().getHours();
+  if (hora >= 19 || hora <= 7) {
+    document.body.classList.add('modo-oscuro');
+  }
+</script>
+<script>
+  preguntas = document.querySelectorAll('.pregunta');
+
+  preguntas.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const yaActiva = item.classList.contains('activa');
+
+      document.querySelectorAll('.acordeon .item').forEach(el => {
+        el.classList.remove('activa');
+      });
+
+      if (!yaActiva) {
+        item.classList.add('activa');
+      }
+    });
+  });
+</script>
+
+  
+<script>
+  // Gráficos radiales animados
+  constcirculos = document.querySelectorAll('.circulo');
+  const observerRadial = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const porcentaje = entry.target.getAttribute('data-porcentaje');
+        entry.target.style.setProperty('--valor', porcentaje);
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  circulos.forEach(c => observerRadial.observe(c));
+</script>
+<script>
+  const circulos = document.querySelectorAll('.circulo');
+  const barras = document.querySelectorAll('.barra-progreso');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const porcentaje = entry.target.getAttribute('data-porcentaje');
+        entry.target.style.setProperty('--valor', porcentaje);
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.5 });
+  circulos.forEach(c => observer.observe(c));
+  const observerBarras = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const valor = entry.target.getAttribute('data-progreso');
+        entry.target.style.width = valor + '%';
+      }
+    });
+  }, { threshold: 0.5 });
+
+  barras.forEach(b => observerBarras.observe(b));
+</script>
+<script>
+  const preguntas = document.querySelectorAll('.faq-question');
+
+  preguntas.forEach(pregunta => {
+    pregunta.addEventListener('click', () => {
+      const respuesta = pregunta.nextElementSibling;
+      respuesta.classList.toggle('open');
+    });
+  });
+</script>
+
+ <script src="scripts.js">
+
+
+
+async (params) => {
+  
+  </script>
+  <script src="scripts.js"></script>
+
+<section id="faq" class="faq">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq-item">
+    <button class="faq-pregunta">¿Qué servicios ofreces?</button>
+    <div class="faq-respuesta">
+      <p>Ofrezco diseño web, desarrollo frontend y consultoría en experiencia de usuario.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-pregunta">¿Qué tecnologías usas?</button>
+    <div class="faq-respuesta">
+      <p>HTML, CSS, JavaScript, React, y herramientas modernas como Figma y Git.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-pregunta">¿Dónde puedo ver tus proyectos?</button>
+    <div class="faq-respuesta">
+      <p>En la sección de "Proyectos" de esta página o en mi perfil de GitHub.</p>
+    </div>
+  </div>
+</section>
+<div class="tarjeta-blog reveal">
+  <h3>la profesionalidad existe no dude en contactarme ,mi secretaria le agendara cita</h3>
+  
+</div>
+<section id="servicios" class="seccion servicios">
+  <<section id="servicios" class="seccion servicios">
+    <h2>Servicios</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Desarrollo Web</h3>
+        <p>Diseño y desarrollo de sitios modernos, optimizados y adaptables a cualquier dispositivo.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Diseño UI/UX</h3>
+        <p>Interfaces atractivas y funcionales que mejoran la experiencia del usuario.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsive Design</h3>
+        <p>Webs que se ven geniales en móviles, tablets y escritorios sin perder calidad.</p>
+      </div>
+    </div>
+    <section id="juego">
+  <h2>🎮 Adivina el Número</h2>
+  
+  </section>
+  <div class="servicio reveal">
+  <i class="fas fa-laptop-code"></i>
+  <h3>Desarrollo Web</h3>
+  <p>Diseño y desarrollo de sitios modernos.</p>
+</div>
+
+<footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-col">
+        <h4>Sobre mí</h4>
+        <p>Soy un desarrollador frontend enfocado en crear experiencias digitales limpias y atractivas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <h4>Redes Sociales</h4>
+        <div class="redes">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Alberto Puchol — Todos los derechos reservados.</p>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <div class="calculadora">
+    <div class="pantalla" id="pantalla">0</div>
+    <div class="teclas">
+      <button class="btn gris" onclick="borrar()">C</button>
+      <button class="btn gris" onclick="borrarUltimo()">⌫</button>
+      <button class="btn gris" onclick="agregar('/')">÷</button>
+      <button class="btn naranja" onclick="agregar('*')">×</button>
+
+      <button class="btn" onclick="agregar('7')">7</button>
+      <button class="btn" onclick="agregar('8')">8</button>
+      <button class="btn" onclick="agregar('9')">9</button>
+      <button class="btn naranja" onclick="agregar('-')">−</button>
+
+      <button class="btn" onclick="agregar('4')">4</button>
+      <button class="btn" onclick="agregar('5')">5</button>
+      <button class="btn" onclick="agregar('6')">6</button>
+      <button class="btn naranja" onclick="agregar('+')">+</button>
+
+      <button class="btn" onclick="agregar('1')">1</button>
+      <button class="btn" onclick="agregar('2')">2</button>
+      <button class="btn" onclick="agregar('3')">3</button>
+      <button class="btn igual" onclick="calcular()">=</button>
+
+      <button class="btn cero" onclick="agregar('0')">0</button>
+      <button class="btn" onclick="agregar('.')">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+ 
+
+  
+</script>
+  </body>
