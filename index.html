@@ -78,7 +78,7 @@
   <!-- Hero -->
   <section class="hero parallax" class="seccion animar-scroll"></section>
     <section id="inicio" class="seccion hero">
-  <img src="foto-perfil.png" alt="Mi foto" class="perfil" />
+  <img src="img/foto-perfil.png" alt="Mi foto" class="perfil" />
   <h1>¡Hola! Soy Alberto</h1>
   <section id="inicio" class="seccion">
   <h1><span id="texto-escribiendo"></span><span class="cursor">|</span></h1>
@@ -141,11 +141,11 @@
   <div class="imagenes-proyectos-centradas">
     <div class="contenedor-img etiqueta diseno">
       <span class="etiqueta-texto">HTML/CSS</span>
-      <img class="img-hover" src="proyecto1.jpg" alt="Landing Page">
+      <img class="img-hover" src="img/proyecto1.jpg" alt="Landing Page">
     </div>
     <div class="contenedor-img etiqueta desarrollo">
       <span class="etiqueta-texto">JavaScript</span>
-      <img class="img-hover" src="proyecto2.jpg" alt="Blog Personal">
+      <img class="img-hover" src="img/proyecto2.jpg" alt="Blog Personal">
     </div>
     <
     
@@ -217,9 +217,9 @@
     <h2>Galería de imágenes</h2>
     <div class="carrusel">
       <div class="imagenes">
-        <img src="galeria1.jpg" alt="Paisaje 1">
-        <img src="galeria2.jpg" alt="Caballo">
-        <img src="galeria3.jpg" alt="Lectura">
+        <img src="img/galeria1.jpg" alt="Paisaje 1">
+        <img src="img/galeria2.jpg" alt="Caballo">
+        <img src="img/galeria3.jpg" alt="Lectura">
       </div>
     </div>
   </section>
@@ -403,8 +403,27 @@
   </div>
 </section>
 <button class="boton-neon">Contáctame</button>
-
-  
+<!-- === Tragamonedas === -->
+  <section class="juego">
+    <h2>Mini Tragamonedas</h2>
+    <div class="slot-machine">
+      <div class="reel" id="reel1">🍒</div>
+      <div class="reel" id="reel2">🍋</div>
+      <div class="reel" id="reel3">🍊</div>
+    </div>
+    <button onclick="spin()">🎰 Girar</button>
+    <p id="resultado"></p>
+  </section>
+  <!-- === Piedra, Papel o Tijera === -->
+<section class="juego">
+  <h2>Piedra, Papel o Tijera</h2>
+  <div class="ppt-botones">
+    <button onclick="jugar('piedra')">✊</button>
+    <button onclick="jugar('papel')">✋</button>
+    <button onclick="jugar('tijera')">✌️</button>
+  </div>
+  <p id="resultado-ppt"></p>
+</section>
 
   <!-- Scripts JS -->
   <script>
@@ -622,7 +641,10 @@ async (params) => {
   <h3>Desarrollo Web</h3>
   <p>Diseño y desarrollo de sitios modernos.</p>
 </div>
-
+<!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2025 Alberto Puchol</p>
+  </footer>
 <footer class="footer">
     <div class="footer-contenido">
       <div class="footer-col">
@@ -676,9 +698,49 @@ async (params) => {
     </div>
   </div>
 
-  <script src="script.js"></script>
- 
+  <script>
+    // === Tragamonedas ===
+    const simbolos = ["🍒", "🍋", "🍊", "🍉", "⭐", "🔔"];
 
+    function spin() {
+      const r1 = simbolos[Math.floor(Math.random() * simbolos.length)];
+      const r2 = simbolos[Math.floor(Math.random() * simbolos.length)];
+      const r3 = simbolos[Math.floor(Math.random() * simbolos.length)];
+      document.getElementById("reel1").textContent = r1;
+      document.getElementById("reel2").textContent = r2;
+      document.getElementById("reel3").textContent = r3;
+
+      const resultado = document.getElementById("resultado");
+      if (r1 === r2 && r2 === r3) {
+        resultado.textContent = "🎉 ¡Has ganado!";
+        resultado.style.color = "green";
+      } else {
+        resultado.textContent = "❌ Intenta de nuevo";
+        resultado.style.color = "red";
+      }
+    }
+// === Piedra, Papel o Tijera ===
+function jugar(eleccionUsuario) {
+  const opciones = ['piedra', 'papel', 'tijera'];
+  const eleccionCPU = opciones[Math.floor(Math.random() * 3)];
+  let resultado = '';
+
+  if (eleccionUsuario === eleccionCPU) {
+    resultado = `🤝 Empate: ambos eligieron ${eleccionUsuario}`;
+  } else if (
+    (eleccionUsuario === 'piedra' && eleccionCPU === 'tijera') ||
+    (eleccionUsuario === 'papel' && eleccionCPU === 'piedra') ||
+    (eleccionUsuario === 'tijera' && eleccionCPU === 'papel')
+  ) {
+    resultado = `✅ ¡Ganaste! Tú: ${eleccionUsuario} | CPU: ${eleccionCPU}`;
+  } else {
+    resultado = `❌ Perdiste... Tú: ${eleccionUsuario} | CPU: ${eleccionCPU}`;
+  }
+
+  document.getElementById("resultado-ppt").textContent = resultado;
+}
   
 </script>
-  </body>
+</body>
+ 
+
