@@ -1,747 +1,504 @@
+
+   <!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Calculadora Minimalista</title>
-  <link rel="stylesheet" href="style.css" />
-  
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolly Foods - Natural Preserves</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f2411',
+                            green: '#2d5a27',
+                            lightGreen: '#4b7f52',
+                            cream: '#fcfbf7',
+                            gold: '#c5a059'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<!-- Botón flotante de contacto -->
-<div class="chat-flotante">
-  <button id="btnChat" class="btn-chat">💬</button>
-  <div class="ventana-chat" id="ventanaChat">
-    <p>¿Tienes dudas? Escríbeme:</p>
-    <a href="https://wa.me/34600000000" target="_blank">📱 WhatsApp</a>
-    <a href="mailto:correo@ejemplo.com">✉️ Correo</a>
-  </div>
-</div>
+<body class="bg-brand-cream text-gray-800 antialiased font-sans">
 
-<body>
-
- <!-- Fondo animado -->
-  <div class="fondo-animado">
-    <span style="--i:11"></span>
-    <span style="--i:19"></span>
-    <span style="--i:25"></span>
-    <span style="--i:17"></span>
-    <span style="--i:22"></span>
-    <span style="--i:13"></span>
-    <span style="--i:28"></span>
-    <span style="--i:18"></span>
-    <span style="--i:24"></span>
-    <span style="--i:20"></span>
-  </div>
-
-  <!-- Modal -->
-  <section class="seccion"> 
-    <button class="abrir-modal">Abrir ventana</button>
-    <div class="modal" id="miModal">
-      <div class="modal-contenido">
-        <span class="cerrar">&times;</span>
-        <h3>Hola 👋</h3>
-        <p>Este es un ejemplo de ventana emergente (modal). Puedes poner texto, imágenes o formularios aquí.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">👨‍💻 MiPortafolio</div>
-    
-    <div class="hamburguesa" id="hamburguesa">☰</div>
-    <button id="modo-btn" class="modo-toggle">🌙</button>
-    <div class="hamburguesa" id="hamburguesa">☰</div>
-<nav class="nav" id="nav">
-  
-  <a href="#sobre-mi">Sobre mí</a>
-  <a href="#proyectos">Proyectos</a>
-  <a href="#contacto">Contacto</a>
-  <a href="#preguntas frecuentes"> 
-    <a href="#faq">Preguntas Frecuentes</a>
-    <a href="#aficiones"></a>
-  <a href="#faq">aficiones
-  <a href="#faq">ultimos articulos</a>
-  
-  
-  
-</nav>
-<
-
-  </header>
-
-  <!-- Hero -->
-  <section class="hero parallax" class="seccion animar-scroll"></section>
-    <section id="inicio" class="seccion hero">
-  <img src="foto-perfil.png" alt="Mi foto" class="perfil" >
-  <h1>¡Hola! Soy Alberto</h1>
-  <section id="inicio" class="seccion">
-  <h1><span id="texto-escribiendo"></span><span class="cursor">|</span></h1>
-  <p>Soy un diseñador web creativo con experiencia en HTML, CSS y un toque de JavaScript. Me gusta crear sitios atractivos y funcionales.</p>
-  <svg id="estrella" width="100" height="100" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 2L14.09 8.26H21L15.45 12.97L17.54 19.24L12 14.53L6.46 19.24L8.55 12.97L3 8.26H9.91L12 2Z"/>
-</svg>
-<section id="sobre-mi" class="seccion reveal">
-  <div class="contenedor">
-    <h2>Sobre mí</h2>
-    <div class="sobre-mi-contenido">
-      
-      <div class="texto-sobre-mi">
-        <p>Soy un diseñador web creativo con experiencia en <strong>HTML</strong>, <strong>CSS</strong> y un toque de <strong>JavaScript</strong>. Me apasiona crear sitios web modernos, funcionales y con buen diseño visual.</p>
-        <p>Me gusta resolver problemas, aprender tecnologías nuevas y ofrecer soluciones personalizadas para cada proyecto.</p>
-      </div>
-    </div>
-  </div>
-</section>
-</section> 
-  </section>
-  <section id="cv" class="seccion cv">
-  <h2>Mi Currículum</h2>
-  <p>Puedes descargar mi CV completo en PDF.</p>
-  <a href="docs/CV-AlbertoPuchol.pdf" download class="btn-descargar">
-    <i class="fas fa-file-download"></i> Descargar CV
-  </a>
-  
-  
-</section>
-
-  <!-- Aficiones -->
-  <section id="aficiones" class="seccion">
-    <h2>Mis Aficiones</h2>
-    <div class="aficiones-lista">
-      <div class="aficion">
-        📖 <h3>Leer</h3>
-        <p>Me encanta leer sobre desarrollo personal, tecnología y ciencia ficción.</p>
-      </div>
-      <div class="aficion">
-        🚶‍♂️ <h3>Pasear</h3>
-        <p>Disfruto caminar al aire libre para despejar la mente y encontrar inspiración.</p>
-      </div>
-      <div class="aficion">
-        🐎 <h3>Montar a caballo</h3>
-        <p>Montar a caballo me conecta con la naturaleza y me da una gran sensación de libertad.</p>
-      </div>
-    </div>
-  </section>
- <section class="seccion" id="proyectos">
-  <h2>Mis Proyectos</h2>
-
-  <!-- Filtro por categorías -->
-  <div class="filtro-proyectos">
-    <button data-filtro="todos" class="activo">Todos</button>
-    <button data-filtro="diseno">Diseño</button>
-    <button data-filtro="desarrollo">Desarrollo</button>
-    <button data-filtro="react">React</button>
-  </div>
- <div class="imagenes-proyectos-centradas">
-    <div class="contenedor-img etiqueta diseno">
-      <span class="etiqueta-texto">HTML/CSS</span>
-      <img class="img-hover" src="img proyecto1.jpg" alt="Landing Page">
-    </div>
-    <div class="contenedor-img etiqueta desarrollo">
-      <span class="etiqueta-texto">JavaScript</span>
-      <img class="img-hover" src="galeria proyecto2.jpg" alt="Blog Personal">
-    </div>
-    <
-    
-  </div>
-<section id="estadisticas" class="seccion">
-  <h2>Estadísticas</h2>
-  <div class="contenedor-estadisticas">
-    <div class="contador" data-numero="1200">50</div>
-    <p>Proyectos realizados</p>
-  </div>
-  <div class="contenedor-estadisticas">
-    <div class="contador" data-numero="350">35</div>
-    <p>Clientes satisfechos</p>
-  </div>
-  <div class="contenedor-estadisticas">
-    <div class="contador" data-numero="15">75</div>
-    <p>Años de experiencia</p>
-  </div>
-</section>
-
- <!-- Sección de habilidades -->
-<section id="habilidades" class="seccion reveal">
-  <h2>Mis habilidades</h2>
-  <div class="habilidad">
-    <p>HTML</p>
-    <div class="barra"><div class="progreso" style="width: 90%"></div></div>
-  </div>
-  <div class="habilidad">
-    <p>CSS</p>
-    <div class="barra"><div class="progreso" style="width: 80%"></div></div>
-  </div>
-  <div class="habilidad">
-    <p>JavaScript</p>
-    <div class="barra"><div class="progreso" style="width: 65%"></div></div>
-  </div>
-</section>
-
-  <div class="contenedor-habilidades">
-    
-    <!-- CSS -->
-    
-    
-        <div class="barra-progreso" data-progreso="100%"></div>
-      <div class="tarjetas proyectos">
-    <div class="tarjeta animar diseno">
-      <h3>Landing Page</h3>
-      <p>Diseño adaptable para un producto.</p>
-      <a class="btn-vermas" href="#">Ver más</a>
-    </div>
-    <div class="tarjeta animar desarrollo">
-      <h3>Blog Personal</h3>
-      <p>Blog con categorías y modo oscuro.</p>
-      <a class="btn-vermas" href="#">Ver más</a>
-    </div>
-    <div class="tarjeta animar react">
-      <h3>Portfolio JS</h3>
-      <p>Interacción dinámica con JavaScript.</p>
-      <a class="btn-vermas" href="#">Ver más</a>
-    </div>
-  </div>
-    </div>
-
-    <!-- Diseño -->
-   
-      
-    
-  <!-- Galería -->
-  <section class="galeria">
-    <h2>Galería de imágenes</h2>
-    <div class="carrusel">
-      <div class="imagenes">
-        <img src=" galeria1.jpg" alt="Paisaje 1">
-        <img src=" galeria2.jpg" alt="Caballo">
-        <img src=" galeria3.jpg" alt="Lectura">
-      </div>
-    </div>
-  </section>
-  <section id="faq" class="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq-item">
-      <button class="faq-pregunta">¿Qué servicios ofreces? <span class="icono">+</span></button>
-      <div class="faq-respuesta">
-        <p>Ofrezco diseño y desarrollo web frontend profesional, optimizado para SEO y adaptable a todos los dispositivos.</p>
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-pregunta">¿Puedo ver ejemplos de tu trabajo? <span class="icono">+</span></button>
-      <div class="faq-respuesta">
-        <p>Sí, visita la sección de proyectos para ver ejemplos reales con imágenes y descripciones.</p>
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-pregunta">¿Trabajas de forma remota? <span class="icono">+</span></button>
-      <div class="faq-respuesta">
-        <p>Sí, trabajo con clientes de cualquier parte del mundo utilizando herramientas de colaboración online.</p>
-      </div>
-    </div>
-<section id="blog" class="blog">
-  <h2>Últimos Artículos</h2>
-
-  <div class="blog-grid">
-    <article class="blog-card">
-      <img src="img/blog1.webp" alt="Artículo 1">
-      <div class="blog-contenido">
-        <h3>Cómo diseñar una web moderna</h3>
-        <p>Descubre los principios básicos para crear una página atractiva y funcional en 2025.</p>
-        <a href="#">Leer más</a>
-      </div>
-    </article>
-
-    <article class="blog-card">
-      <img src="img/blog2.webp" alt="Artículo 2">
-      <div class="blog-contenido">
-        <h3>Errores comunes al crear un portafolio</h3>
-        <p>Evita estos fallos si quieres destacar tu trabajo profesional en internet.</p>
-        <a href="#">Leer más</a>
-      </div>
-    </article>
-
-    <article class="blog-card">
-      <img src="img/blog3.webp" alt="Artículo 3">
-      <div class="blog-contenido">
-        <h3>Consejos para mejorar tu posicionamiento SEO</h3>
-        <p>Haz que tu web aparezca en Google con estas buenas prácticas de optimización.</p>
-        <a href="#">Leer más</a>
-      </div>
-    </article>
-  </div>
-</section>
-  <!-- Contacto -->
-  <section id="contacto" class="seccion contacto">
-   <h2>Contacto</h2>
-  <form class="formulario-contacto">
-    <input type="text" placeholder="Nombre" required>
-    <input type="email" placeholder="Correo electrónico" required>
-    <textarea placeholder="Tu mensaje..." required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-<section id="faq" class="faq">
-  <h2>Preguntas Frecuentes</h2>
-
-  <div class="faq-item">
-  <button class="faq-pregunta">¿Qué servicios ofreces?</button>
-    <div class="faq-answer">
-      <p>Diseño web, desarrollo front-end y mantenimiento de sitios personales y empresariales.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-pregunta">¿Qué servicios ofreces?</button>
-    <div class="faq-answer">
-      <p>Trabajo en línea desde España, y colaboro con clientes en todo el mundo.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-pregunta">¿Qué servicios ofreces?</button>
-    <div class="faq-answer">
-      <p>Tengo más de 5 años creando sitios responsivos, modernos y accesibles.</p>
-    </div>
-  </div>
-</section>
-
- 
-  <!-- Mapa -->
-  <section class="mapa">
-    <h2>Ubicación</h2>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.3585784269493!2d2.1734035156471074!3d41.38506397926367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2fcd70b26cf%3A0x8c3b6d0f0e2b0e83!2sBarcelona!5e0!3m2!1ses!2ses!4v1692643982587!5m2!1ses!2ses" 
-      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </section>
-
-  <!-- Blog -->
-  <section class="blog" id="blog">
-    <h2>Mi Blog</h2>
-    <div class="grid-blog">
-      <article class="post">
-        <img src="https://source.unsplash.com/400x250/?design" alt="Diseño web">
-        <h3>Diseño Web Moderno</h3>
-        <p>Consejos y tendencias para crear sitios visualmente atractivos y funcionales.</p>
-        <a href="#">Leer más</a>
-      </article>
-      <article class="post">
-        <img src="https://source.unsplash.com/400x250/?coding" alt="Programación">
-        <h3>Aprende a Programar</h3>
-        <p>Guías paso a paso para comenzar en el mundo del desarrollo web.</p>
-        <a href="#">Leer más</a>
-      </article>
-      <article class="post">
-        <img src="https://source.unsplash.com/400x250/?freelance" alt="Freelance">
-        <h3>Vida Freelance</h3>
-        <p>Descubre cómo trabajar por tu cuenta y vivir de tu pasión por la tecnología.</p>
-        <a href="#">Leer más</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Botones Sociales -->
-  <div class="botones-sociales">
-    <a href="https://facebook.com" target="_blank" class="social facebook">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-    </a>
-    <a href="https://instagram.com" target="_blank" class="social instagram">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
-    </a>
-    <a href="https://wa.me/123456789" target="_blank" class="social whatsapp">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </a>
-  </div>
-  <div class="selector-idioma">
-  <button onclick="cambiarIdioma('es')">Español</button>
-  <button onclick="cambiarIdioma('en')">English</button>
-</div>
-
-<section class="multilingue">
-  
-</section>
-<section id="faq" class="seccion faq">
-  <h2>Preguntas Frecuentes</h2>
-  <div class="faq-contenedor">
-    <div class="faq-item">
-      <div class="faq-pregunta">¿Qué tipo de proyectos realizas?</div>
-      <div class="faq-respuesta">Me enfoco en sitios web modernos, responsivos y optimizados tanto para empresas como para portafolios personales.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-pregunta">¿Trabajas con frameworks?</div>
-      <div class="faq-respuesta">Sí, tengo experiencia en React, Vue, y también en HTML/CSS/JS puro.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-pregunta">¿Ofreces mantenimiento web?</div>
-      <div class="faq-respuesta">Claro, doy soporte técnico, actualizaciones y mejoras constantes si el cliente lo requiere.</div>
-    </div>
-  </div>
-</section>
-<section id="experiencia" class="seccion">
-  
-  <h2>Experiencia</h2>
-
-  <div class="tabs">
-    <button class="tab activo" data-tab="trabajo">Trabajo</button>
-    <button class="tab" data-tab="formacion">Formación</button>
-    <button class="tab" data-tab="habilidades">Habilidades</button>
-  </div>
-
-  <div class="tab-contenido activo" id="trabajo">
-    <p>He trabajado en varios proyectos como desarrollador frontend freelance...</p>
-  </div>
-  <div class="tab-contenido" id="formacion">
-    <p>Formado en diseño web, HTML, CSS, JavaScript y frameworks modernos.</p>
-  </div>
-  <div class="tab-contenido" id="habilidades">
-    <p>HTML, CSS, JS, React, UX/UI, Responsive Design...</p>
-  </div>
-</section>
-<button class="boton-neon">Contáctame</button>
-<!-- === Tragamonedas === -->
-  <section class="juego">
-    <h2>Mini Tragamonedas</h2>
-    <div class="slot-machine">
-      <div class="reel" id="reel1">🍒</div>
-      <div class="reel" id="reel2">🍋</div>
-      <div class="reel" id="reel3">🍊</div>
-    </div>
-    <button onclick="spin()">🎰 Girar</button>
-    <p id="resultado"></p>
-  </section>
-  <!-- === Piedra, Papel o Tijera === -->
-<section class="juego">
-  <h2>Piedra, Papel o Tijera</h2>
-  <div class="ppt-botones">
-    <button onclick="jugar('piedra')">✊</button>
-    <button onclick="jugar('papel')">✋</button>
-    <button onclick="jugar('tijera')">✌️</button>
-  </div>
-  <p id="resultado-ppt"></p>
-</section>
-
-  <!-- Scripts JS -->
-  <script>
-    // Hamburguesa
-    document.getElementById("hamburguesa").addEventListener("click", () => {
-      document.getElementById("nav").classList.toggle("activo");
-    });
-
-    // Modal
-    const abrir = document.querySelector('.abrir-modal');
-    const modal = document.getElementById('miModal');
-    const cerrar = document.querySelector('.cerrar');
-
-    abrir.addEventListener('click', () => {
-      modal.style.display = 'block';
-    });
-    cerrar.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
-    window.addEventListener('click', (e) => {
-      if (e.target == modal) {
-        modal.style.display = 'none';
-      }
-    });
-    
-
-    // Scroll animado
-    const elementos = document.querySelectorAll('.animado');
-    const mostrarElemento = () => {
-      const alturaVentana = window.innerHeight;
-      elementos.forEach(el => {
-        const distancia = el.getBoundingClientRect().top;
-        if (distancia < alturaVentana - 100) {
-          el.classList.add('visible');
-        }
-      });
-    };
-    window.addEventListener('scroll', mostrarElemento);
-    window.addEventListener('load', mostrarElemento);
-
-    // Barras de progreso
-    const animarBarras = () => {
-      const barras = document.querySelectorAll('.relleno');
-      barras.forEach(barra => {
-        const distancia = barra.getBoundingClientRect().top;
-        if (distancia < window.innerHeight - 100) {
-          barra.classList.add('activa');
-        }
-      });
-    };
-    
-    window.addEventListener('scroll', animarBarras);
-    window.addEventListener('load', animarBarras);
-    
-  </script>
-<script>
-  
-
-  // Guardar modo anterior
-  if (localStorage.getItem('modo') === 'oscuro') {
-    body.classList.add('modo-oscuro');
-    botonModo.textContent = '☀️';
-  }
-
-  botonModo.addEventListener('click', () => {
-    body.classList.toggle('modo-oscuro');
-
-    // Guardar en localStorage
-    if (body.classList.contains('modo-oscuro')) {
-      botonModo.textContent = '☀️';
-      localStorage.setItem('modo', 'oscuro');
-    } else {
-      botonModo.textContent = '🌙';
-      localStorage.setItem('modo', 'claro');
-    }
-  });
-  
-</script>
-<script>
-  const hora = new Date().getHours();
-  if (hora >= 19 || hora <= 7) {
-    document.body.classList.add('modo-oscuro');
-  }
-</script>
-<script>
-  preguntas = document.querySelectorAll('.pregunta');
-
-  preguntas.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.parentElement;
-      const yaActiva = item.classList.contains('activa');
-
-      document.querySelectorAll('.acordeon .item').forEach(el => {
-        el.classList.remove('activa');
-      });
-
-      if (!yaActiva) {
-        item.classList.add('activa');
-      }
-    });
-  });
-</script>
-
-  
-<script>
-  // Gráficos radiales animados
-  constcirculos = document.querySelectorAll('.circulo');
-  const observerRadial = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const porcentaje = entry.target.getAttribute('data-porcentaje');
-        entry.target.style.setProperty('--valor', porcentaje);
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.5 });
-
-  circulos.forEach(c => observerRadial.observe(c));
-</script>
-<script>
-  const circulos = document.querySelectorAll('.circulo');
-  const barras = document.querySelectorAll('.barra-progreso');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const porcentaje = entry.target.getAttribute('data-porcentaje');
-        entry.target.style.setProperty('--valor', porcentaje);
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.5 });
-  circulos.forEach(c => observer.observe(c));
-  const observerBarras = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const valor = entry.target.getAttribute('data-progreso');
-        entry.target.style.width = valor + '%';
-      }
-    });
-  }, { threshold: 0.5 });
-
-  barras.forEach(b => observerBarras.observe(b));
-</script>
-<script>
-  const preguntas = document.querySelectorAll('.faq-question');
-
-  preguntas.forEach(pregunta => {
-    pregunta.addEventListener('click', () => {
-      const respuesta = pregunta.nextElementSibling;
-      respuesta.classList.toggle('open');
-    });
-  });
-</script>
-
- <script src="scripts.js">
-
-
-
-async (params) => {
-  
-  </script>
-  <script src="scripts.js"></script>
-
-<section id="faq" class="faq">
-  <h2>Preguntas Frecuentes</h2>
-  <div class="faq-item">
-    <button class="faq-pregunta">¿Qué servicios ofreces?</button>
-    <div class="faq-respuesta">
-      <p>Ofrezco diseño web, desarrollo frontend y consultoría en experiencia de usuario.</p>
-    </div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-pregunta">¿Qué tecnologías usas?</button>
-    <div class="faq-respuesta">
-      <p>HTML, CSS, JavaScript, React, y herramientas modernas como Figma y Git.</p>
-    </div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-pregunta">¿Dónde puedo ver tus proyectos?</button>
-    <div class="faq-respuesta">
-      <p>En la sección de "Proyectos" de esta página o en mi perfil de GitHub.</p>
-    </div>
-  </div>
-</section>
-<div class="tarjeta-blog reveal">
-  <h3>la profesionalidad existe no dude en contactarme ,mi secretaria le agendara cita</h3>
-  
-</div>
-<section id="servicios" class="seccion servicios">
-  <<section id="servicios" class="seccion servicios">
-    <h2>Servicios</h2>
-    <div class="servicios-grid">
-      <div class="servicio">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Desarrollo Web</h3>
-        <p>Diseño y desarrollo de sitios modernos, optimizados y adaptables a cualquier dispositivo.</p>
-      </div>
-      <div class="servicio">
-        <i class="fas fa-paint-brush"></i>
-        <h3>Diseño UI/UX</h3>
-        <p>Interfaces atractivas y funcionales que mejoran la experiencia del usuario.</p>
-      </div>
-      <div class="servicio">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Responsive Design</h3>
-        <p>Webs que se ven geniales en móviles, tablets y escritorios sin perder calidad.</p>
-      </div>
-    </div>
-    <section id="juego">
-  <h2>🎮 Adivina el Número</h2>
-  
-  </section>
-  <div class="servicio reveal">
-  <i class="fas fa-laptop-code"></i>
-  <h3>Desarrollo Web</h3>
-  <p>Diseño y desarrollo de sitios modernos.</p>
-</div>
-<!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <p>&copy; 2025 Alberto Puchol</p>
-  </footer>
-<footer class="footer">
-    <div class="footer-contenido">
-      <div class="footer-col">
-        <h4>Sobre mí</h4>
-        <p>Soy un desarrollador frontend enfocado en crear experiencias digitales limpias y atractivas.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Enlaces rápidos</h4>
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-      <h4>Redes Sociales</h4>
-        <div class="redes">
-          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    <!-- 1. BARRA SUPERIOR DE CONTACTO -->
+    <div class="bg-brand-dark text-white text-[11px] py-2 px-4 md:px-12 flex flex-wrap justify-between items-center gap-2 border-b border-emerald-900/30">
+        <div class="flex items-center gap-6 flex-wrap">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-globe text-emerald-400"></i> Envíos internacionales</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-emerald-400"></i> 100% Naturales</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-emerald-400"></i> Hecho en Costa Rica</span>
         </div>
-      </div>
+        <div class="flex items-center gap-6 flex-wrap">
+            <a href="tel:+50689435264" class="flex items-center gap-1.5 hover:text-emerald-300 transition"><i class="fa-solid fa-phone text-emerald-400"></i> +506 8943 5264</a>
+            <a href="https://wa.me/50689435264" target="_blank" class="flex items-center gap-1.5 hover:text-emerald-300 transition"><i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp</a>
+            <a href="mailto:guillermopuchol@gmail.com" class="flex items-center gap-1.5 hover:text-emerald-300 transition"><i class="fa-regular fa-envelope text-emerald-400"></i> guillermopuchol@gmail.com</a>
+            <div class="flex items-center gap-3 ml-2 border-l border-white/20 pl-3">
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
     </div>
-    <p class="footer-copy">&copy; 2025 Alberto Puchol — Todos los derechos reservados.</p>
-  </footer>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <div class="calculadora">
-    <div class="pantalla" id="pantalla">0</div>
-    <div class="teclas">
-      <button class="btn gris" onclick="borrar()">C</button>
-      <button class="btn gris" onclick="borrarUltimo()">⌫</button>
-      <button class="btn gris" onclick="agregar('/')">÷</button>
-      <button class="btn naranja" onclick="agregar('*')">×</button>
 
-      <button class="btn" onclick="agregar('7')">7</button>
-      <button class="btn" onclick="agregar('8')">8</button>
-      <button class="btn" onclick="agregar('9')">9</button>
-      <button class="btn naranja" onclick="agregar('-')">−</button>
+    <!-- 2. NAVBAR PRINCIPAL -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 px-4 md:px-12 py-3.5 flex justify-between items-center">
+        <!-- Contenedor Logo -->
+        <div class="flex items-center gap-2">
+            <div class="text-brand-green text-3xl"><i class="fa-solid fa-leaf"></i></div>
+            <div>
+                <span class="block font-bold text-2xl tracking-tight text-brand-dark leading-none">Jolly foods</span>
+                <span class="block text-[9px] uppercase tracking-[0.25em] text-gray-400 font-bold mt-0.5">Natural Preserves</span>
+            </div>
+        </div>
+        
+        <!-- Menú de Navegación -->
+        <nav class="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-gray-600">
+            <a href="#" class="text-brand-green border-b-2 border-brand-green pb-1">Inicio</a>
+            <a href="#" class="hover:text-brand-green transition">Nosotros</a>
+            <div class="relative group cursor-pointer flex items-center gap-1 hover:text-brand-green transition">
+                <span>Productos</span> <i class="fa-solid fa-chevron-down text-[9px]"></i>
+            </div>
+            <a href="#" class="hover:text-brand-green transition">Café Gourmet</a>
+            <a href="#" class="hover:text-brand-green transition">Calidad</a>
+            <a href="#" class="hover:text-brand-green transition">Exportación</a>
+            <a href="#" class="hover:text-brand-green transition">Contacto</a>
+        </nav>
+        
+        <!-- Botón de Acción -->
+        <a href="#" class="bg-brand-green text-white px-4 py-2 rounded text-xs font-semibold flex items-center gap-2 hover:bg-brand-dark transition shadow-xs">
+            <i class="fa-regular fa-comments text-sm"></i> Contáctanos
+        </a>
+    </header>
 
-      <button class="btn" onclick="agregar('4')">4</button>
-      <button class="btn" onclick="agregar('5')">5</button>
-      <button class="btn" onclick="agregar('6')">6</button>
-      <button class="btn naranja" onclick="agregar('+')">+</button>
+    <!-- 3. HERO BANNER PRINCIPAL -->
+    <section class="relative bg-gradient-to-br from-[#122b15] via-[#1a3d1f] to-[#112413] text-white min-h-[520px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 opacity-15 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=1200&q=80');"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12 w-full grid md:grid-cols-12 gap-8 relative z-10 py-16">
+            <div class="md:col-span-7 flex flex-col justify-center">
+                <span class="text-emerald-400 font-serif italic text-xl md:text-2xl mb-1 block font-medium">Sabores naturales de</span>
+                <h1 class="font-serif text-5xl md:text-6xl font-extrabold leading-[1.1] mb-5 tracking-tight">Costa Rica <br><span class="font-normal">para el mundo</span></h1>
+                <p class="text-gray-300 text-sm md:text-base max-w-lg mb-8 leading-relaxed font-light">
+                    Productos gourmet 100% naturales, elaborados con pasión, sostenibilidad y compromiso con la calidad.
+                </p>
+                <div class="flex flex-wrap gap-5 text-xs font-medium text-emerald-300/90 mb-8">
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Naturales</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> Calidad Premium</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> Hecho en Costa Rica</span>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded text-xs font-bold tracking-wider uppercase transition flex items-center gap-2 shadow-md">
+                        Conoce nuestros productos <i class="fa-solid fa-leaf text-[10px]"></i>
+                    </a>
+                    <a href="#" class="border border-white/30 hover:bg-white/10 text-white px-5 py-3 rounded text-xs font-bold tracking-wider uppercase transition flex items-center gap-2">
+                        Contáctanos <i class="fa-brands fa-whatsapp text-sm"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 flex items-center justify-center relative mt-8 md:mt-0">
+                <div class="flex gap-3 items-end justify-center w-full max-w-md">
+                    <div class="bg-white/95 p-2.5 rounded-lg shadow-xl text-center text-gray-800 w-28 transform -rotate-3 translate-y-6 border border-gray-100">
+                        <div class="h-32 bg-emerald-50 rounded-md mb-2 flex flex-col justify-between p-2 text-emerald-800">
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-emerald-600">Jolly</span>
+                            <i class="fa-solid fa-jar text-2xl my-auto opacity-70"></i>
+                            <span class="text-[10px] font-bold">PALMITO</span>
+                        </div>
+                        <span class="text-[8px] font-semibold text-gray-400 block uppercase tracking-wider">Preserves</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow-2xl text-center text-gray-800 w-36 z-10 border border-amber-100 transform scale-105">
+                        <div class="h-40 bg-amber-50 rounded-md mb-2 flex flex-col justify-between p-2 text-amber-800">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-amber-600">Jolly Foods</span>
+                            <i class="fa-solid fa-pineapple text-3xl my-auto opacity-80"></i>
+                            <span class="text-xs font-bold tracking-wide">PIÑA EN CONSERVA</span>
+                        </div>
+                        <span class="text-[9px] font-bold text-amber-600 uppercase tracking-widest">100% Natural</span>
+                    </div>
+                    <div class="bg-white/95 p-2.5 rounded-lg shadow-xl text-center text-gray-800 w-26 transform rotate-3 translate-y-8 border border-gray-100">
+                        <div class="h-28 bg-orange-50 rounded-md mb-2 flex flex-col justify-between p-2 text-orange-800">
+                            <span class="text-[8px] font-bold uppercase text-orange-600">Jolly</span>
+                            <i class="fa-solid fa-mortar-pestle text-xl my-auto opacity-70"></i>
+                            <span class="text-[9px] font-bold">UNTABLE CLÁSICO</span>
+                        </div>
+                        <span class="text-[7px] font-medium text-gray-400 block uppercase">Gourmet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <button class="btn" onclick="agregar('1')">1</button>
-      <button class="btn" onclick="agregar('2')">2</button>
-      <button class="btn" onclick="agregar('3')">3</button>
-      <button class="btn igual" onclick="calcular()">=</button>
+    <!-- 4. SECCIÓN: SOBRE NOSOTROS Y RESPALDO DE ANTONIO BARRANTES -->
+    <section class="max-w-7xl mx-auto px-4 md:px-12 py-16 bg-white rounded-2xl my-10 shadow-xs border border-gray-100/50">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Columna Izquierda: Filosofía, Misión y Visión -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                    <div>
+                        <span class="text-brand-green font-bold text-xs uppercase tracking-widest block mb-2">Conoce Jolly Foods & Natural Preserves</span>
+                        <h2 class="font-serif text-3xl md:text-4xl font-extrabold text-brand-dark leading-tight">
+                            Una evolución hacia una forma de vida más saludable, compasiva y responsable[cite: 1]
+                        </h2>
+                    </div>
+                    <!-- NUEVO ENLACE: CONOCE UN POCO MÁS SOBRE NOSOTROS -->
+                    <a href="https://www.instagram.com/reel/DWlW_eXishd/" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-brand-green hover:text-brand-lightGreen border border-brand-green/20 hover:border-brand-green bg-brand-cream/40 px-3.5 py-2 rounded-lg transition duration-300 whitespace-nowrap shadow-2xs">
+                        Conoce un poco más sobre nosotros <i class="fa-brands fa-instagram text-sm text-pink-600"></i>
+                    </a>
+                </div>
+                <div class="h-1 w-20 bg-brand-gold rounded"></div>
 
-      <button class="btn cero" onclick="agregar('0')">0</button>
-      <button class="btn" onclick="agregar('.')">.</button>
-    </div>
-  </div>
+                <p class="text-xs text-gray-600 leading-relaxed font-light">
+                    Somos una pyme 100% costarricense[cite: 1] nacida con la misión de poner en valor los productos agrícolas de Costa Rica producidos y procesados por pequeños productores y sus asociaciones[cite: 2]. A través de **Natural Preserves**, agrupamos a diferentes cooperativas de pequeños productores (como Coopehorquetas)[cite: 2] para expandir canales de exportación y comercialización[cite: 2], garantizando una mejor retribución que eleve su calidad de vida[cite: 2].
+                </p>
 
-  <script>
-    // === Tragamonedas ===
-    const simbolos = ["🍒", "🍋", "🍊", "🍉", "⭐", "🔔"];
+                <!-- Tarjetas de Misión y Visión -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-brand-cream/50 p-5 rounded-xl border border-emerald-800/5">
+                        <div class="flex items-center gap-2 text-brand-green font-bold text-xs uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-bullseye text-base"></i> Nuestra Misión
+                        </div>
+                        <p class="text-[11px] text-gray-500 leading-relaxed">
+                            Puesta en valor de productos agrícolas locales[cite: 2], promoviendo prácticas agrícolas sostenibles para el respeto al medio ambiente[cite: 2] y ofreciendo productos frescos, prácticos, saludables y nutritivos[cite: 2].
+                        </p>
+                    </div>
+                    <div class="bg-brand-cream/50 p-5 rounded-xl border border-emerald-800/5">
+                        <div class="flex items-center gap-2 text-brand-green font-bold text-xs uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-eye text-base"></i> Nuestra Visión
+                        </div>
+                        <p class="text-[11px] text-gray-500 leading-relaxed">
+                            Ser una empresa líder en el mercado por su excelente calidad total[cite: 2], desarrollo e integración social constante en todas nuestras comunidades[cite: 2].
+                        </p>
+                    </div>
+                </div>
 
-    function spin() {
-      const r1 = simbolos[Math.floor(Math.random() * simbolos.length)];
-      const r2 = simbolos[Math.floor(Math.random() * simbolos.length)];
-      const r3 = simbolos[Math.floor(Math.random() * simbolos.length)];
-      document.getElementById("reel1").textContent = r1;
-      document.getElementById("reel2").textContent = r2;
-      document.getElementById("reel3").textContent = r3;
+                <!-- Bloque de Propiedades (Dips de Palmito) -->
+                <div class="border-t border-gray-100 pt-6">
+                    <h3 class="font-bold text-xs uppercase text-brand-dark tracking-wider mb-3">Delicias de Palmito: Innovación Vegetal[cite: 1]</h3>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mb-4">
+                        Desarrollamos el primer dip/untable costarricense con base vegetal que puede sustituir los lácteos en el uso diario y para cocinar[cite: 1]. Ideal para disfrutar como boca, merienda, o base para salsas de pastas y platos preferidos[cite: 1]. Es un producto 100% natural, vegano, apto para dietas Keto y completamente libre de gluten y lactosa[cite: 1].
+                    </p>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[10px] text-emerald-700 font-semibold bg-emerald-50/40 p-3 rounded-lg border border-emerald-100/30">
+                        <span>✓ 100% Artesanal y Vegetal[cite: 1]</span>
+                        <span>✓ Sin conservantes químicos[cite: 1]</span>
+                        <span>✓ Fuente de Fibra natural[cite: 1]</span>
+                        <span>✓ Proteína, Hierro, Potasio y Vitamina C[cite: 1]</span>
+                    </div>
+                </div>
+            </div>
 
-      const resultado = document.getElementById("resultado");
-      if (r1 === r2 && r2 === r3) {
-        resultado.textContent = "🎉 ¡Has ganado!";
-        resultado.style.color = "green";
-      } else {
-        resultado.textContent = "❌ Intenta de nuevo";
-        resultado.style.color = "red";
-      }
-    }
-// === Piedra, Papel o Tijera ===
-function jugar(eleccionUsuario) {
-  const opciones = ['piedra', 'papel', 'tijera'];
-  const eleccionCPU = opciones[Math.floor(Math.random() * 3)];
-  let resultado = '';
+            <!-- Columna Derecha: El Alma del Café (Antonio Barrantes) -->
+            <div class="lg:col-span-5 bg-brand-dark text-white p-6 md:p-8 rounded-2xl border border-emerald-950 shadow-md relative overflow-hidden flex flex-col justify-between h-full min-h-[460px]">
+                <div class="absolute inset-0 opacity-5 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80');"></div>
+                
+                <div class="relative z-10 space-y-5">
+                    <div class="flex items-center gap-2">
+                        <span class="text-amber-400 text-lg">☕</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Café de Especialidad</span>
+                    </div>
+                    
+                    <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight text-white">
+                        El respaldo de un gran profesional
+                    </h3>
+                    
+                    <p class="text-xs text-gray-300 leading-relaxed font-light">
+                        Para asegurar la máxima excelencia en cada grano, en Jolly Foods contamos con el apoyo, guía y asesoría invaluable en el cuidado de nuestra finca, así como en la producción y rigurosa selección de nuestro café, de **Antonio Barrantes**.
+                    </p>
+                    
+                    <p class="text-xs text-gray-300 leading-relaxed font-light">
+                        Antonio es reconocido como un gran profesional en el mundo cafetero. Su impecable trayectoria e implicación directa garantizan que nuestro café destaque por sus notas auténticas y un nivel gourmet insuperable.
+                    </p>
+                </div>
 
-  if (eleccionUsuario === eleccionCPU) {
-    resultado = `🤝 Empate: ambos eligieron ${eleccionUsuario}`;
-  } else if (
-    (eleccionUsuario === 'piedra' && eleccionCPU === 'tijera') ||
-    (eleccionUsuario === 'papel' && eleccionCPU === 'piedra') ||
-    (eleccionUsuario === 'tijera' && eleccionCPU === 'papel')
-  ) {
-    resultado = `✅ ¡Ganaste! Tú: ${eleccionUsuario} | CPU: ${eleccionCPU}`;
-  } else {
-    resultado = `❌ Perdiste... Tú: ${eleccionUsuario} | CPU: ${eleccionCPU}`;
-  }
+                <!-- RECUADRO INTERACTIVO DE ANTONIO BARRANTES -->
+                <div class="relative z-10 mt-8 bg-white/5 border border-white/10 p-4 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 backdrop-blur-xs">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-white tracking-wide">Antonio Barrantes</span>
+                            <span class="block text-[10px] text-emerald-400">Experto en Production Cafetera</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/reel/DFCmrJEq8Na/" target="_blank" class="w-full sm:w-auto text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[10px] uppercase tracking-wider px-4 py-2.5 rounded-lg transition duration-300 flex items-center justify-center gap-2 whitespace-nowrap shadow-xs">
+                        Conoce a Antonio Barrantes <i class="fa-brands fa-instagram text-xs"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-  document.getElementById("resultado-ppt").textContent = resultado;
-}
-  
-</script>
+    <!-- 5. NUESTROS PRODUCTOS ESTRELLA -->
+    <section class="max-w-7xl mx-auto px-4 md:px-12 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-brand-dark text-lg font-bold tracking-widest uppercase flex items-center justify-center gap-2">
+                <span class="text-emerald-600 text-sm">🌿</span> Nuestros Productos Estrella <span class="text-emerald-600 text-sm">🌿</span>
+            </h2>
+            <div class="h-0.5 w-16 bg-brand-gold/40 mx-auto mt-2"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5">
+            <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-xs flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80" alt="Palmito" class="w-full h-32 object-cover rounded-lg mb-3.5">
+                    <h3 class="font-bold text-xs text-brand-dark uppercase tracking-wide mb-1.5">Palmito en Conserva</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">Tierno, fresco y natural. Ideal para ensaladas, entradas y recetas gourmet.</p>
+                </div>
+                <button class="mt-4 w-full bg-brand-green hover:bg-brand-dark text-white text-[10px] uppercase font-bold tracking-wider py-2 rounded-md transition">Ver más</button>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-xs flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=300&q=80" alt="Piña" class="w-full h-32 object-cover rounded-lg mb-3.5">
+                    <h3 class="font-bold text-xs text-brand-dark uppercase tracking-wide mb-1.5">Piña en Conserva</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">Dulce, jugosa y seleccionada en su punto perfecto. En rodajas y trozos.</p>
+                </div>
+                <button class="mt-4 w-full bg-brand-green hover:bg-brand-dark text-white text-[10px] uppercase font-bold tracking-wider py-2 rounded-md transition">Ver más</button>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-xs flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=300&q=80" alt="Jugo" class="w-full h-32 object-cover rounded-lg mb-3.5">
+                    <h3 class="font-bold text-xs text-brand-dark uppercase tracking-wide mb-1.5">Jugo de Piña Natural</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">100% natural, sin azúcar añadida ni conservantes. Sabor tropical puro.</p>
+                </div>
+                <button class="mt-4 w-full bg-brand-green hover:bg-brand-dark text-white text-[10px] uppercase font-bold tracking-wider py-2 rounded-md transition">Ver más</button>
+            </div>
+
+            <div class="col-span-1 md:col-span-3 grid grid-cols-3 gap-3 border border-emerald-800/10 p-3 rounded-xl bg-emerald-50/25">
+                <div class="col-span-3 text-center bg-brand-dark text-white text-[9px] font-bold tracking-widest uppercase py-1.5 rounded-md">
+                    Línea Palmito de Untables
+                </div>
+                <div class="bg-white p-2.5 text-center rounded-lg shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-20 bg-amber-50/50 rounded-md mb-2 flex items-center justify-center text-amber-700"><i class="fa-solid fa-jar"></i></div>
+                        <h4 class="font-bold text-[11px] text-brand-dark leading-tight">Untable Clásico</h4>
+                        <p class="text-[9px] text-gray-400 mt-1 leading-snug">Suave y cremoso, para todo momento del día[cite: 1].</p>
+                    </div>
+                    <button class="mt-2.5 w-full bg-brand-green text-white text-[8px] py-1 rounded font-bold uppercase tracking-wider">Ver más</button>
+                </div>
+                <div class="bg-white p-2.5 text-center rounded-lg shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-20 bg-amber-50/50 rounded-md mb-2 flex items-center justify-center text-amber-700"><i class="fa-solid fa-jar"></i></div>
+                        <h4 class="font-bold text-[11px] text-brand-dark leading-tight">Untable con Pimienta</h4>
+                        <p class="text-[9px] text-gray-400 mt-1 leading-snug">Con un toque de pimienta negra. Sabor auténtico.</p>
+                    </div>
+                    <button class="mt-2.5 w-full bg-brand-green text-white text-[8px] py-1 rounded font-bold uppercase tracking-wider">Ver más</button>
+                </div>
+                <div class="bg-white p-2.5 text-center rounded-lg shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-20 bg-amber-50/50 rounded-md mb-2 flex items-center justify-center text-amber-700"><i class="fa-solid fa-jar"></i></div>
+                        <h4 class="font-bold text-[11px] text-brand-dark leading-tight">Untable con Tomate</h4>
+                        <p class="text-[9px] text-gray-400 mt-1 leading-snug">Delicado y aromático, con finas hierbas.</p>
+                    </div>
+                    <button class="mt-2.5 w-full bg-brand-green text-white text-[8px] py-1 rounded font-bold uppercase tracking-wider">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CAFÉ GOURMET DE COSTA RICA -->
+    <section class="bg-[#0b140c] text-white py-16 border-y border-emerald-950">
+        <div class="max-w-7xl mx-auto px-4 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-4 space-y-6">
+                    <div>
+                        <h2 class="font-serif text-4xl font-bold tracking-tight">Café Gourmet</h2>
+                        <p class="font-serif text-2xl text-emerald-400 italic mt-1">de Costa Rica</p>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed font-light">
+                        Descubre nuestra selección de cafés de especialidad, cultivados en las mejores regiones de Costa Rica, con granos 100% arábica de la más alta calidad y trazabilidad.
+                    </p>
+                    <div class="grid grid-cols-3 gap-2 pt-2 text-center">
+                        <div class="p-3 bg-white/5 rounded-lg border border-white/5">
+                            <i class="fa-solid fa-mug-hot text-amber-400 text-lg mb-1.5 block"></i>
+                            <span class="block text-[9px] font-medium text-gray-300">Café 100% Arábica</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-lg border border-white/5">
+                            <i class="fa-solid fa-hand-holding-heart text-amber-400 text-lg mb-1.5 block"></i>
+                            <span class="block text-[9px] font-medium text-gray-300">Cosecha Selectiva</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-lg border border-white/5">
+                            <i class="fa-solid fa-fire-flame-curved text-amber-400 text-lg mb-1.5 block"></i>
+                            <span class="block text-[9px] font-medium text-gray-300">Tostado Artesanal</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider py-3 rounded-lg transition">
+                        Conoce nuestras variedades
+                    </button>
+                </div>
+
+                <div class="lg:col-span-8 grid grid-cols-3 gap-2.5">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80" alt="Granos" class="w-full h-36 object-cover rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="Báscula" class="w-full h-36 object-cover rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Planta" class="w-full h-36 object-cover rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=400&q=80" alt="Hojas" class="w-full h-36 object-cover rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Manos" class="w-full h-36 object-cover rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=400&q=80" alt="Taza" class="w-full h-36 object-cover rounded-lg">
+                </div>
+            </div>
+
+            <div class="mt-12 pt-6 border-t border-white/10 text-center">
+                <p class="text-[11px] tracking-widest uppercase text-emerald-400 mb-4 font-bold">🍂 Nuestras Variedades de Café 🍂</p>
+                <div class="flex flex-wrap justify-center gap-2.5 text-[10px] uppercase font-semibold">
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">Villa Sarchí</span>
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">VS Honey</span>
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">VS Natural</span>
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">Geisha</span>
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">Typica Lima</span>
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">Typica Lourdes</span>
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">Typica Mejorado</span>
+                    <span class="border border-white/10 px-3 py-1.5 rounded-md bg-white/5 text-gray-300">Kenya SL28</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. GESTIÓN DE PEDIDOS Y FORMULARIO -->
+    <section class="max-w-7xl mx-auto px-4 md:px-12 py-16 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-xs flex flex-col justify-between">
+            <div>
+                <h3 class="text-base font-bold text-brand-dark text-center mb-0.5">Pedidos de Café Tostado</h3>
+                <p class="text-xs text-emerald-600 text-center font-bold tracking-wide mb-5">🔸 Paquetes de 1 kg 🔸</p>
+                <p class="text-[11px] text-gray-500 mb-5 text-center leading-relaxed">Todas nuestras variedades disponibles en presentaciones de 1 kg, tostado artesanalmente para resaltar aromas.</p>
+                <div class="grid grid-cols-2 gap-3 text-[11px] text-gray-700 font-medium border-t border-gray-50 pt-4">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> Villa Sarchí</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> Typica Lima</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> VS Honey</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> Typica Lourdes</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> VS Natural</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> Typica Mejorado</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> Geisha</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-square-check text-emerald-600 text-xs"></i> Kenya SL28</span>
+                </div>
+            </div>
+            <div class="mt-6 bg-brand-dark text-white p-3 rounded-lg text-center text-[10px] font-medium flex items-center justify-center gap-2">
+                <i class="fa-solid fa-headset text-emerald-400 text-xs"></i> Contáctanos directamente para tarifas de lote.
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-xs flex flex-col justify-between">
+            <div>
+                <h3 class="text-base font-bold text-brand-dark text-center mb-0.5">Pedidos de Café en Verde</h3>
+                <p class="text-xs text-emerald-600 text-center font-bold tracking-wide mb-5">Grano Verde 100% Arábica</p>
+                <p class="text-[11px] text-gray-500 mb-5 text-center leading-relaxed">Café de alta calidad óptimo para tostadores comerciales y distribuidores mundiales.</p>
+                <div class="space-y-3 text-[11px] text-gray-700 font-medium border-t border-gray-50 pt-4">
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-circle-arrow-up text-brand-gold"></i> Calidad de Exportación certificada</p>
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-shield-circle-check text-brand-gold"></i> Trazabilidad de origen Garantizada</p>
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-layer-group text-brand-gold"></i> Procesos: Lavado, Natural y Honey</p>
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-calendar-days text-brand-gold"></i> Disponibilidad y stock estable anual</p>
+                </div>
+            </div>
+            <div class="mt-6 h-11 bg-emerald-50/70 rounded-lg flex items-center justify-center text-[11px] text-brand-green font-bold border border-emerald-100/40">
+                Sacos industriales estándar de 69 kg
+            </div>
+        </div>
+
+        <div class="bg-brand-dark text-white p-6 rounded-xl shadow-lg border border-emerald-950">
+            <h3 class="text-base font-bold mb-0.5">Realiza tu Pedido</h3>
+            <p class="text-[10px] text-emerald-400 mb-4">Completa el formulario y te atenderemos en la mayor brevedad posible.</p>
+            <form class="space-y-2.5 text-xs text-gray-800">
+                <input type="text" placeholder="Nombre completo" class="w-full p-2.5 rounded-md bg-white border-none">
+                <input type="text" placeholder="Empresa (opcional)" class="w-full p-2.5 rounded-md bg-white border-none">
+                <input type="text" placeholder="País" class="w-full p-2.5 rounded-md bg-white border-none">
+                <select class="w-full p-2.5 rounded-md bg-white border-none text-gray-500 font-medium">
+                    <option disabled selected>Producto de interés</option>
+                    <option>Conservas de Fruta / Palmito</option>
+                    <option>Café de Especialidad Tostado</option>
+                    <option>Café Verde Comercial</option>
+                </select>
+                <input type="text" placeholder="Cantidad aproximada" class="w-full p-2.5 rounded-md bg-white border-none">
+                <textarea placeholder="Detalles..." rows="3" class="w-full p-2.5 rounded-md bg-white border-none"></textarea>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-md uppercase tracking-wider text-[11px] transition flex items-center justify-center gap-2 mt-3">
+                    Enviar Pedido <i class="fa-brands fa-whatsapp text-sm"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 8. VALORES -->
+    <section class="bg-white border-y border-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="flex flex-col items-center p-2">
+                <div class="w-12 h-12 bg-emerald-50 text-brand-green rounded-full flex items-center justify-center mb-3 text-xl"><i class="fa-solid fa-leaf"></i></div>
+                <h4 class="font-bold text-xs text-gray-900 mb-1.5 uppercase tracking-wider">Sostenibilidad</h4>
+                <p class="text-[11px] text-gray-500 max-w-[170px]">Comprometidos con el desarrollo y cuidado del medio ambiente.</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <div class="w-12 h-12 bg-emerald-50 text-brand-green rounded-full flex items-center justify-center mb-3 text-xl"><i class="fa-solid fa-medal"></i></div>
+                <h4 class="font-bold text-xs text-gray-900 mb-1.5 uppercase tracking-wider">Calidad Premium</h4>
+                <p class="text-[11px] text-gray-500 max-w-[170px]">Seleccionamos rigurosamente lo mejor de nuestra tierra.</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <div class="w-12 h-12 bg-emerald-50 text-brand-green rounded-full flex items-center justify-center mb-3 text-xl"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                <h4 class="font-bold text-xs text-gray-900 mb-1.5 uppercase tracking-wider">Exportación</h4>
+                <p class="text-[11px] text-gray-500 max-w-[170px]">Logística ágil para llevar Costa Rica al mundo[cite: 2].</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <div class="w-12 h-12 bg-emerald-50 text-brand-green rounded-full flex items-center justify-center mb-3 text-xl"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h4 class="font-bold text-xs text-gray-900 mb-1.5 uppercase tracking-wider">Origen Fiel</h4>
+                <p class="text-[11px] text-gray-500 max-w-[170px]">Orgullosamente costarricenses, trabajando con pasión[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-white pt-12 pb-5 text-xs text-gray-600">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+            <div>
+                <h4 class="font-bold text-gray-900 uppercase tracking-widest text-[11px] mb-4 border-b border-gray-100 pb-1">Contacto</h4>
+                <ul class="space-y-2.5 text-[11px]">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-green"></i> +506 8943 5264</li>
+                    <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-green"></i> +506 8943 5264</li>
+                    <li class="flex items-center gap-2"><i class="fa-regular fa-envelope text-brand-green"></i> info@jollyfoods.com</li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 flex flex-col justify-between items-start">
+                <div>
+                    <h4 class="font-bold text-gray-900 uppercase tracking-widest text-[11px] mb-3">¡Hablemos!</h4>
+                    <p class="text-[11px] text-gray-500 max-w-sm">Estamos a tu completa disposición para atender consultas mayoristas y envíos globales con los estándares más altos de Costa Rica.</p>
+                </div>
+                <button class="mt-4 bg-brand-green text-white font-bold uppercase tracking-wider px-4 py-2 rounded text-[10px] flex items-center gap-2">
+                    Escríbenos <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </div>
+            <div class="flex flex-col justify-between items-end">
+                <div class="w-full text-right">
+                    <h4 class="font-bold text-gray-900 uppercase tracking-widest text-[11px] mb-3">Síguenos</h4>
+                    <div class="flex justify-end gap-3 text-base text-gray-700">
+                        <a href="#" class="hover:text-brand-green"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-brand-green"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="w-36 h-14 bg-cover bg-center rounded-lg mt-4 opacity-75 border border-gray-100" style="background-image: url('https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=150&q=80');"></div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 md:px-12 pt-5 border-t border-gray-100 flex flex-wrap justify-between items-center text-[10px] text-gray-400 gap-2">
+            <p>&copy; 2026 Jolly Foods Natural Preserves. Todos los derechos reservados.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline">Política de Privacidad</a>
+                <a href="#" class="hover:underline">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
- 
-
-  
+</html>
